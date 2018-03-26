@@ -44,13 +44,12 @@ Then let's specify a no frills output table format.
 
 #### Query
 
-And then the SPARQL query itself. This just lists an aritrary page of musicians with their gender. Will look for a more inspired example later.
+And then the SPARQL query itself. This just lists an arbitrary page of musicians with their gender. Will look for a more inspired example later.
 
 
 ```sparql
 select distinct ?artist ?gender
 where {
-   #?s a dbo:MusicalArtist .
    ?s a yago:Musician110339966 .
    optional { ?s foaf:gender ?gender }
    bind (?s as ?artist)
