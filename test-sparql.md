@@ -1,4 +1,8 @@
 
+## test-sparql.ipynb
+
+So let's first list out the magics as a useful reference.
+
 
 ```sparql
 %lsmagics
@@ -7,6 +11,8 @@
 
 <div class="krn-spql"><div class="magic-help">Available magics:<br/>%auth  %display  %endpoint  %format  %graph  %lang  %log  %lsmagics  %outfile  %prefix  %qparam  %show<br/><br/>%auth (basic|digest|none) &lt;username&gt; &lt;passwd&gt; : send HTTP authentication<br/>%display raw | table [withtypes] | diagram [svg|png] [withliterals] : set display format<br/>%endpoint &lt;url&gt; : set SPARQL endpoint. **REQUIRED**<br/>%format JSON | N3 | XML | any | default : set requested result format<br/>%graph &lt;uri&gt; : set default graph for the queries<br/>%lang &lt;lang&gt; [...] | default | all : language(s) preferred for labels<br/>%log critical | error | warning | info | debug : set logging level<br/>%lsmagics  : list all magics<br/>%outfile &lt;filename&gt; | NONE : save raw output to a file (use &quot;%d&quot; in name to add cell number, &quot;NONE&quot; to cancel saving)<br/>%prefix &lt;name&gt; [&lt;uri&gt;] : set (or delete) a persistent URI prefix for all queries<br/>%qparam &lt;name&gt; [&lt;value&gt;] : add (or delete) a persistent custom parameter to the endpoint query<br/>%show &lt;n&gt; | all : maximum number of shown results</div></div>
 
+
+Next we'll set the SPARQL endpoint we're going to query – here DBpedia.
 
 
 ```sparql
@@ -17,6 +23,8 @@
 <div class="krn-spql"><div class="magic">Endpoint set to: http://dbpedia.org/sparql</div></div>
 
 
+Then let's specify a no frills output table format.
+
 
 ```sparql
 %display table
@@ -25,6 +33,8 @@
 
 <div class="krn-spql"><div class="magic">Display: table</div></div>
 
+
+And then the SPARQL query itself. 
 
 
 ```sparql
