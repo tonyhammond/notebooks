@@ -29,9 +29,9 @@ Next we'll set the SPARQL endpoint we're going to query – here DBpedia.
 <div class="krn-spql"><div class="magic">Endpoint set to: http://dbpedia.org/sparql</div></div>
 
 
-#### Format
+#### Display
 
-Then let's specify a no frills output table format.
+Then let's specify a 'no frills' output table display format.
 
 
 ```sparql
@@ -54,7 +54,7 @@ where {
    optional { ?s foaf:gender ?gender }
    bind (?s as ?artist)
 }
-limit 100 offset 60
+limit 20 offset 60
 ```
 
 
@@ -79,5 +79,5 @@ limit 100 offset 60
 <td class=val>male</td></tr><tr class=even><td class=val><a href="http://dbpedia.org/resource/Hildegard_Knef" target="_other">http://dbpedia.org/resource/Hildegard_Knef</a></td>
 <td class=val>female</td></tr><tr class=odd><td class=val><a href="http://dbpedia.org/resource/Ian_Curtis" target="_other">http://dbpedia.org/resource/Ian_Curtis</a></td>
 <td class=val>male</td></tr><tr class=even><td class=val><a href="http://dbpedia.org/resource/Ian_Dury" target="_other">http://dbpedia.org/resource/Ian_Dury</a></td>
-<td class=val>male</td></tr></table><div class="tinfo">Total: 100, Shown: 20</div></div>
+<td class=val>male</td></tr></table><div class="tinfo">Total: 20, Shown: 20</div></div>
 
