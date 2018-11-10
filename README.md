@@ -1,2 +1,3 @@
-# notebooks
-Test repo for trying out Jupyter notebooks
+# Notebooks
+
+Test repo for trying out Jupyter Notebooks.
